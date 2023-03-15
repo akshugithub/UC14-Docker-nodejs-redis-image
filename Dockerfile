@@ -23,5 +23,4 @@ COPY ./ ./
 CMD ["npm","start"]
 
 
-FROM redis:latest
-COPY ./ ./
+FROM redis:alpine
