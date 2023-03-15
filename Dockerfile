@@ -1,6 +1,6 @@
 FROM        redis
 EXPOSE      6379
-ENTRYPOINT  ["/usr/bin/redis-server"]
+#ENTRYPOINT  ["/usr/bin/redis-server"]
 
 
 #Specify a base image
