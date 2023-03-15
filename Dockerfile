@@ -1,5 +1,5 @@
-FROM redis:latest
-COPY ./ ./
+#FROM redis:latest
+#COPY ./ ./
 #EXPOSE 6379
 #ENTRYPOINT  ["/usr/bin/redis-server"]
 
@@ -21,3 +21,7 @@ COPY ./ ./
 
 #Default command
 CMD ["npm","start"]
+
+
+FROM redis:latest
+COPY ./ ./
