@@ -1,4 +1,4 @@
-#FROM redis:latest
+FROM redis:alpine
 #COPY ./ ./
 #EXPOSE 6379
 #ENTRYPOINT  ["/usr/bin/redis-server"]
@@ -23,4 +23,4 @@ COPY ./ ./
 CMD ["npm","start"]
 
 
-FROM redis:alpine
+#FROM redis:alpine
