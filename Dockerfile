@@ -1,3 +1,8 @@
+FROM        redis
+EXPOSE      6379
+ENTRYPOINT  ["/usr/bin/redis-server"]
+
+
 #Specify a base image
 FROM node:alpine
 
@@ -15,9 +20,3 @@ COPY ./ ./
 
 #Default command
 CMD ["npm","start"]
-
-
-FROM        redis
-#RUN         redis-server
-EXPOSE      6379
-ENTRYPOINT  ["/usr/bin/redis-server"]
